@@ -45,6 +45,7 @@ class TextConverter {
     stringToNumber(str) {
         let result = '';
         for (let i = 0; i < str.length; i++) {
+            // 文字のUnicodeコードポイントを取得して5桁の文字列に変換
             result += str.charCodeAt(i).toString(10).padStart(5, '0'); 
         }
         return result;
@@ -52,7 +53,7 @@ class TextConverter {
 
     numberToString(num) {
         let result = '';
-        for (let i = 0; i < num.length; i += 5) { 
+        for (let i = 0; i < num.length; i += 5) { // 各5桁を1つの文字に変換
             let charCode = parseInt(num.substr(i, 5), 10);
             result += String.fromCharCode(charCode);
         }
