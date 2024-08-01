@@ -3,8 +3,8 @@ class TextConverter {
         return {
             id: 'textConverter',
             name: 'テキスト変換',
-            color1: '#388df9', // カスタムカラー1
-            color2: '#0063ba', // カスタムカラー2
+            color1: '#388df9',
+            color2: '#0063ba',
             blocks: [
                 {
                     opcode: 'convert',
